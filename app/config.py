@@ -25,10 +25,20 @@ DB_PATH = Path(os.getenv("VOE_DB_PATH", DATA_DIR / "audit.db"))
 # --------------------------------------------------------------------------
 # LLM configuration (optional - the engine degrades gracefully without it)
 # --------------------------------------------------------------------------
-LLM_ENABLED = os.getenv("VOE_LLM_ENABLED", "auto").lower()  # auto | on | off
+# Load .env explicitly so uvicorn, streamlit and pytest all see the same key.
+try:
+    from dotenv import load_dotenv
+    load_dotenv(BASE_DIR / ".env")
+except ImportError:          # dotenv is optional; real env vars still work
+    pass
+
+LLM_PROVIDER = "openai"
+LLM_ENABLED = os.getenv("VOE_LLM_ENABLED", "auto").lower()   # auto | on | off
 LLM_MODEL = os.getenv("VOE_LLM_MODEL", "gpt-5.6-luna")
-LLM_API_KEY = os.getenv("API_KEY", "")
+LLM_API_KEY = os.getenv("OPENAI_API_KEY") or os.getenv("API_KEY", "")
+LLM_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1")
 LLM_TIMEOUT_S = int(os.getenv("VOE_LLM_TIMEOUT", "60"))
+LLM_REASONING_EFFORT = os.getenv("VOE_LLM_REASONING_EFFORT", "low")
 
 # --------------------------------------------------------------------------
 # Document taxonomy
