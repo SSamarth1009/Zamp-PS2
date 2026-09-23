@@ -84,14 +84,14 @@ def _call(client: OpenAI, system: str, user: str, max_tokens: int, json_mode: bo
 
 def complete(system: str, user: str, max_tokens: int = 1500,
              json_mode: bool = False) -> Optional[str]:
-    client = _client_or_none()
-    if client is None:
-        return None
     try:
+        client = _client_or_none()
+        if client is None:
+            return None
         resp = _call(client, system, user, max_tokens, json_mode)
         text = (resp.choices[0].message.content or "").strip()
         return text or None
-    except Exception:  # network, auth, rate limit - never break the pipeline
+    except Exception:  # client construction, network, auth, rate limit
         return None
 
 
