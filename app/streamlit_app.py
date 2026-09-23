@@ -249,7 +249,7 @@ with tab_verify:
         if err:
             st.error(err)
         else:
-            sub = samples.get("submissions", [])
+            sub = samples.get("samples", [])
             if not sub:
                 st.info("No bundled sample submissions found. Run `python tools/generate_documents.py` first.")
             else:

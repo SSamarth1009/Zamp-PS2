@@ -1,0 +1,94 @@
+{
+  "_disclaimer": "DEMO / SYNTHETIC DOCUMENT - NOT VALID FOR OFFICIAL USE",
+  "submissions": [
+    {
+      "vendor_id": "V001",
+      "vendor_name": "Apex Industrial Solutions Pvt Ltd",
+      "scenario": "Clean submission, fully consistent.",
+      "submitted_documents": {
+        "vendor_application": "V001/vendor_application.pdf",
+        "incorporation_certificate": "V001/incorporation_certificate.pdf",
+        "gst_certificate": "V001/gst_certificate.pdf",
+        "pan_document": "V001/pan_document.pdf",
+        "bank_verification": "V001/bank_verification.pdf",
+        "industry_license": "V001/industry_license.pdf"
+      }
+    },
+    {
+      "vendor_id": "V002",
+      "vendor_name": "Northwind Chemicals Pvt Ltd",
+      "scenario": "Industry licence not attached.",
+      "submitted_documents": {
+        "vendor_application": "V002/vendor_application.pdf",
+        "incorporation_certificate": "V002/incorporation_certificate.pdf",
+        "gst_certificate": "V002/gst_certificate.pdf",
+        "pan_document": "V002/pan_document.pdf",
+        "bank_verification": "V002/bank_verification.pdf"
+      }
+    },
+    {
+      "vendor_id": "V003",
+      "vendor_name": "Sierra Logistics Pvt Ltd",
+      "scenario": "Bank account title does not match the legal entity.",
+      "submitted_documents": {
+        "vendor_application": "V003/vendor_application.pdf",
+        "incorporation_certificate": "V003/incorporation_certificate.pdf",
+        "gst_certificate": "V003/gst_certificate.pdf",
+        "pan_document": "V003/pan_document.pdf",
+        "bank_verification": "V003/bank_verification.pdf",
+        "industry_license": "V003/industry_license.pdf"
+      }
+    },
+    {
+      "vendor_id": "V004",
+      "vendor_name": "Meridian Foods Pvt Ltd",
+      "scenario": "PAN quoted in a malformed format.",
+      "submitted_documents": {
+        "vendor_application": "V004/vendor_application.pdf",
+        "incorporation_certificate": "V004/incorporation_certificate.pdf",
+        "gst_certificate": "V004/gst_certificate.pdf",
+        "pan_document": "V004/pan_document.pdf",
+        "bank_verification": "V004/bank_verification.pdf",
+        "industry_license": "V004/industry_license.pdf"
+      }
+    },
+    {
+      "vendor_id": "V005",
+      "vendor_name": "Kaveri Textiles Pvt Ltd",
+      "scenario": "One document carries a singular/plural variant of the legal name.",
+      "submitted_documents": {
+        "vendor_application": "V005/vendor_application.pdf",
+        "incorporation_certificate": "V005/incorporation_certificate.pdf",
+        "gst_certificate": "V005/gst_certificate.pdf",
+        "pan_document": "V005/pan_document.pdf",
+        "bank_verification": "V005/bank_verification.pdf",
+        "industry_license": "V005/industry_license.pdf"
+      }
+    },
+    {
+      "vendor_id": "V006",
+      "vendor_name": "Orion Pharma Pvt Ltd",
+      "scenario": "Multiple failures: GST certificate missing, malformed PAN, bank title mismatch, expired licence.",
+      "submitted_documents": {
+        "vendor_application": "V006/vendor_application.pdf",
+        "incorporation_certificate": "V006/incorporation_certificate.pdf",
+        "pan_document": "V006/pan_document.pdf",
+        "bank_verification": "V006/bank_verification.pdf",
+        "industry_license": "V006/industry_license.pdf"
+      }
+    },
+    {
+      "vendor_id": "V007",
+      "vendor_name": "Cobalt Metalworks Pvt Ltd",
+      "scenario": "Wrong file attached: the GST certificate was uploaded in the bank-verification slot.",
+      "submitted_documents": {
+        "vendor_application": "V007/vendor_application.pdf",
+        "incorporation_certificate": "V007/incorporation_certificate.pdf",
+        "gst_certificate": "V007/gst_certificate.pdf",
+        "pan_document": "V007/pan_document.pdf",
+        "bank_verification": "V007/bank_verification.pdf",
+        "industry_license": "V007/industry_license.pdf"
+      }
+    }
+  ]
+}

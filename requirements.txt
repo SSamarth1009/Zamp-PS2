@@ -1,0 +1,25 @@
+# --- Backend (FastAPI) ---
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+pydantic==2.9.2
+python-dotenv==1.0.1
+openai==1.51.0
+
+pymupdf==1.24.10
+
+# --- Frontend (Streamlit) ---
+streamlit==1.38.0
+pandas==2.2.2
+requests==2.32.3
+
+# --- Document generation (tools/generate_documents.py, tools/build_master.py) ---
+reportlab==4.2.2
+
+# --- Testing ---
+pytest==8.3.3
+
+# --- Optional: OCR fallback for scanned PDFs (pdf_text.py degrades gracefully without these) ---
+# pytesseract==0.3.13
+# Pillow==10.4.0
+
+python-multipart

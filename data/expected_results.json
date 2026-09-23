@@ -1,0 +1,70 @@
+{
+  "_note": "Ground truth for evaluation.",
+  "expected": [
+    {
+      "vendor_id": "V001",
+      "vendor_name": "Apex Industrial Solutions Pvt Ltd",
+      "scenario": "Clean submission, fully consistent.",
+      "expected_status": "APPROVED",
+      "expected_issue_codes": []
+    },
+    {
+      "vendor_id": "V002",
+      "vendor_name": "Northwind Chemicals Pvt Ltd",
+      "scenario": "Industry licence not attached.",
+      "expected_status": "PENDING",
+      "expected_issue_codes": [
+        "DOC-001"
+      ]
+    },
+    {
+      "vendor_id": "V003",
+      "vendor_name": "Sierra Logistics Pvt Ltd",
+      "scenario": "Bank account title does not match the legal entity.",
+      "expected_status": "PENDING",
+      "expected_issue_codes": [
+        "BNK-001"
+      ]
+    },
+    {
+      "vendor_id": "V004",
+      "vendor_name": "Meridian Foods Pvt Ltd",
+      "scenario": "PAN quoted in a malformed format.",
+      "expected_status": "REJECTED",
+      "expected_issue_codes": [
+        "TAX-001"
+      ]
+    },
+    {
+      "vendor_id": "V005",
+      "vendor_name": "Kaveri Textiles Pvt Ltd",
+      "scenario": "One document carries a singular/plural variant of the legal name.",
+      "expected_status": "PENDING",
+      "expected_issue_codes": [
+        "NAM-001"
+      ]
+    },
+    {
+      "vendor_id": "V006",
+      "vendor_name": "Orion Pharma Pvt Ltd",
+      "scenario": "Multiple failures: GST certificate missing, malformed PAN, bank title mismatch, expired licence.",
+      "expected_status": "REJECTED",
+      "expected_issue_codes": [
+        "TAX-001",
+        "DOC-001",
+        "BNK-001",
+        "LIC-003"
+      ]
+    },
+    {
+      "vendor_id": "V007",
+      "vendor_name": "Cobalt Metalworks Pvt Ltd",
+      "scenario": "Wrong file attached: the GST certificate was uploaded in the bank-verification slot.",
+      "expected_status": "PENDING",
+      "expected_issue_codes": [
+        "DOC-001",
+        "DOC-002"
+      ]
+    }
+  ]
+}
